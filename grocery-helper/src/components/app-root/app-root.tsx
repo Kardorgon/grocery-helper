@@ -26,7 +26,7 @@ export class AppRoot {
           <ion-route url="/profile/:name" component="page-profile"></ion-route>
           <ion-route url="/shopping-list" component="shopping-list"></ion-route>
         </ion-router>
-        <ion-nav></ion-nav>
+        <ion-router-outlet></ion-router-outlet>
       </ion-app>
     )
   }

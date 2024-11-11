@@ -15,10 +15,10 @@ export class AppTabs {
     return (
       <ion-tabs>
         <ion-tab tab="tab-home" component="page-home">
-          <ion-nav></ion-nav>
+          <ion-router-outlet></ion-router-outlet>
         </ion-tab>
         <ion-tab tab="tab-shopping-list">
-          <ion-nav></ion-nav>
+          <ion-router-outlet></ion-router-outlet>
         </ion-tab>
         <ion-tab-bar slot="top">
           <ion-tab-button tab="tab-home">
