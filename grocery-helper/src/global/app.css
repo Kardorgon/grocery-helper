@@ -52,7 +52,6 @@ ion-header {
 
 ion-content {
   flex-grow: 1;
-  height: 100%; /* Pf65d */
 }
 
 ion-list {
