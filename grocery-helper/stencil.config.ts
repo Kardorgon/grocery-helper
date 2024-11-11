@@ -4,6 +4,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   taskQueue: 'async',
+  globalStyle: 'src/global/app.css',
   outputTargets: [
     {
       type: 'www',

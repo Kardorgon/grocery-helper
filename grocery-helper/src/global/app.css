@@ -39,3 +39,30 @@
 */
 
 @import './variables.css';
+
+ion-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+ion-header {
+  flex-shrink: 0;
+}
+
+ion-content {
+  flex-grow: 1;
+}
+
+ion-list {
+  margin: 0;
+  padding: 0;
+}
+
+ion-item {
+  --inner-padding-end: 0;
+}
+
+ion-button {
+  margin-left: auto;
+}
