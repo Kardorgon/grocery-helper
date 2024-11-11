@@ -2,7 +2,7 @@
   "name": "grocery-helper",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil Ionic App Starter",
+  "description": "Grocery Helper App",
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",

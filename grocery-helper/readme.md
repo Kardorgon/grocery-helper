@@ -1,6 +1,6 @@
-# Stencil Ionic App Starter
+# Grocery Helper App
 
-Ionic PWA starter with tabs layout and routes.
+This project is a Grocery Helper App.
 
 Demo: https://stencil-ionic-starter.surge.sh
 
@@ -15,12 +15,6 @@ Stencil components are just Web Components, so they work in any major framework 
 Stencil also enables a number of key capabilities on top of Web Components, in particular Server Side Rendering (SSR) without the need to run a headless browser, pre-rendering, and objects-as-properties (instead of just strings).
 
 ## Getting Started
-
-To start a new project using Stencil, clone this repo to a new directory:
-
-```bash
-npm init stencil ionic-pwa
-```
 
 To open the project in a browser for testing, run:
 
