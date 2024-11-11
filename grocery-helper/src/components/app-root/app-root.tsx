@@ -6,6 +6,17 @@ import { Component, h } from '@stencil/core';
   // shadow: true,
 })
 export class AppRoot {
+
+  componentDidLoad() {
+    console.log('AppRoot component has been loaded');
+    const router = document.querySelector('ion-router');
+    if (router) {
+      console.log('Router is initialized');
+    } else {
+      console.error('Router is not initialized');
+    }
+  }
+
   render() {
     return (
       <ion-app>
