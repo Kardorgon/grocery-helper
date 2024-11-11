@@ -7,6 +7,7 @@ import { Component, Fragment, h, State } from '@stencil/core'
 })
 export class PageHome {
   @State() mode: string
+  @State() products: string[] = ['Apples', 'Bananas', 'Carrots', 'Dairy', 'Eggs']
 
   constructor() {
     this.mode = localStorage.getItem('mode') || 'auto'
@@ -27,6 +28,10 @@ export class PageHome {
         break
     }
     location.reload()
+  }
+
+  addToShoppingList(product: string) {
+    // Add product to shopping list
   }
 
   render() {
@@ -70,6 +75,16 @@ export class PageHome {
               <ion-label>Profile Page (/profile/ionic)</ion-label>
             </ion-item>
           </ion-list>
+          <p>Products:</p>
+          <ion-list>
+            {this.products.map(product => (
+              <ion-item key={product}>
+                <ion-label>{product}</ion-label>
+                <ion-button onClick={() => this.addToShoppingList(product)}>Add to Shopping List</ion-button>
+              </ion-item>
+            ))}
+          </ion-list>
+          <ion-button href="/shopping-list">Go to Shopping List</ion-button>
         </ion-content>
       </Fragment>
     )
