@@ -8,13 +8,8 @@ import { Component, h, State } from '@stencil/core';
 export class ShoppingList {
   @State() shoppingList: string[] = [];
 
-  componentDidLoad() {
-    console.log('ShoppingList component has been loaded');
-    if (this.shoppingList && this.shoppingList.length > 0) {
-      console.log('Shopping list is initialized');
-    } else {
-      console.error('Shopping list is not initialized');
-    }
+  componentWillLoad() {
+    console.log('ShoppingList component is about to load');
   }
 
   addToShoppingList(product: string) {

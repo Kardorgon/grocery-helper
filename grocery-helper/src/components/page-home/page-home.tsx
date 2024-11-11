@@ -13,13 +13,8 @@ export class PageHome {
     this.mode = localStorage.getItem('mode') || 'auto'
   }
 
-  componentDidLoad() {
-    console.log('PageHome component has been loaded');
-    if (this.products && this.products.length > 0) {
-      console.log('Products are initialized');
-    } else {
-      console.error('Products are not initialized');
-    }
+  componentWillLoad() {
+    console.log('PageHome component is about to load');
   }
 
   setMode(mode: string) {

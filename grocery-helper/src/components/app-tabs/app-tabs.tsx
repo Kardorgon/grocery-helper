@@ -7,14 +7,8 @@ import { Component, h } from '@stencil/core';
 })
 export class AppTabs {
 
-  componentDidLoad() {
-    console.log('AppTabs component has been loaded');
-    const tabs = document.querySelector('ion-tabs');
-    if (tabs) {
-      console.log('Tabs are initialized');
-    } else {
-      console.error('Tabs are not initialized');
-    }
+  componentWillLoad() {
+    console.log('AppTabs component is about to load');
   }
 
   render() {
