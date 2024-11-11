@@ -20,7 +20,7 @@ export class AppTabs {
         <ion-tab tab="tab-shopping-list" component="shopping-list">
           <ion-nav></ion-nav>
         </ion-tab>
-        <ion-tab-bar slot="bottom">
+        <ion-tab-bar slot="top">
           <ion-tab-button tab="tab-home">
             <ion-icon name="home"></ion-icon>
             <ion-label>Home</ion-label>
