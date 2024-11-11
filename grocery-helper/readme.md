@@ -22,11 +22,13 @@ To start a new project using Stencil, clone this repo to a new directory:
 npm init stencil ionic-pwa
 ```
 
-and run:
+To open the project in a browser for testing, run:
 
 ```bash
 npm start
 ```
+
+This will start a local development server and open the project in your default web browser.
 
 To build the app for production, run:
 
