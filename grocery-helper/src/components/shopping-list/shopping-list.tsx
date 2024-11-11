@@ -30,11 +30,6 @@ export class ShoppingList {
   render() {
     return (
       <ion-page>
-        <ion-header>
-          <ion-toolbar color="primary">
-            <ion-title>Shopping List</ion-title>
-          </ion-toolbar>
-        </ion-header>
         <ion-content class="ion-padding">
           <ion-list>
             {this.shoppingList.map(product => (

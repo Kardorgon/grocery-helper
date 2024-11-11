@@ -23,11 +23,6 @@ export class PageNotice {
   render() {
     return (
       <Fragment>
-        <ion-header>
-          <ion-toolbar color="primary">
-            <ion-title>Notices</ion-title>
-          </ion-toolbar>
-        </ion-header>
         <ion-content class="ion-padding">
           <ion-list>
             {this.names.map(name=>
