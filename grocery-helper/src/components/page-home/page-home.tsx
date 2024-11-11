@@ -73,11 +73,8 @@ export class PageHome {
           </ion-list>
           <p>Let's try navigating with ionic router!</p>
           <ion-list>
-            <ion-item href="/tab/notice">
-              <ion-label>Notice Page (/tab/notice)</ion-label>
-            </ion-item>
-            <ion-item href="/profile/ionic">
-              <ion-label>Profile Page (/profile/ionic)</ion-label>
+            <ion-item href="/profile/:name">
+              <ion-label>Profile Page (/profile/:name)</ion-label>
             </ion-item>
           </ion-list>
           <p>Products:</p>
