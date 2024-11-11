@@ -14,6 +14,11 @@ export class AppRoot {
   render() {
     return (
       <ion-app>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Grocery Helper</ion-title>
+          </ion-toolbar>
+        </ion-header>
         <ion-router useHash={true}>
           <ion-route-redirect from="/" to="/tab/home"></ion-route-redirect>
           <ion-route url="/tab" component="app-tabs">
