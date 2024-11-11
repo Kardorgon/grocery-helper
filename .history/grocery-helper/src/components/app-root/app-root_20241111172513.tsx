@@ -40,7 +40,7 @@ export class AppRoot {
               </ion-item>
               <ion-item button href="/shopping-list">
                 <ion-icon slot="start" name="cart"></ion-icon>
-                <ion-label>Shopping List</ion-label>
+                <ion-label>Shopping List</ion-item>
               </ion-item>
             </ion-list>
           </ion-content>
