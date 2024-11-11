@@ -3,7 +3,7 @@ import { Component, h, State } from '@stencil/core';
 @Component({
   tag: 'shopping-list',
   styleUrl: 'shopping-list.css',
-  // shadow: true,
+  shadow: true,
 })
 export class ShoppingList {
   @State() shoppingList: string[] = [];
@@ -28,6 +28,7 @@ export class ShoppingList {
   }
 
   render() {
+    console.log('ShoppingList render method is called');
     return (
       <ion-page>
         <ion-content class="ion-padding">

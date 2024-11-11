@@ -3,7 +3,7 @@ import { Component, Fragment, h, Prop } from '@stencil/core';
 @Component({
   tag: 'page-profile',
   styleUrl: 'page-profile.css',
-  // shadow: true,
+  shadow: true,
 })
 export class PageProfile {
   @Prop() name: string
@@ -18,6 +18,7 @@ export class PageProfile {
   }
 
   render() {
+    console.log('PageProfile render method is called');
     return (
       <Fragment>
         <ion-content fullscreen class="ion-padding">

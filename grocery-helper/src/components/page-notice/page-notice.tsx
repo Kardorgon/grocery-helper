@@ -3,7 +3,7 @@ import { Component, Fragment, h } from '@stencil/core';
 @Component({
   tag: 'page-notice',
   styleUrl: 'page-notice.css',
-  // shadow: true,
+  shadow: true,
 })
 export class PageNotice {
 
@@ -21,6 +21,7 @@ export class PageNotice {
   }
 
   render() {
+    console.log('PageNotice render method is called');
     return (
       <Fragment>
         <ion-content class="ion-padding">

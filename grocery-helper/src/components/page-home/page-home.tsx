@@ -3,7 +3,7 @@ import { Component, Fragment, h, State } from '@stencil/core'
 @Component({
   tag: 'page-home',
   styleUrl: 'page-home.css',
-  // shadow: true,
+  shadow: true,
 })
 export class PageHome {
   @State() products: string[] = ['Apples', 'Bananas', 'Carrots', 'Dairy', 'Eggs']
@@ -20,6 +20,7 @@ export class PageHome {
   }
 
   render() {
+    console.log('PageHome render method is called');
     return (
       <Fragment>
         <ion-content class="ion-padding">
