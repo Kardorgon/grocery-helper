@@ -1,0 +1,39 @@
+ion-menu {
+  --width: 250px;
+}
+
+ion-menu-button {
+  --color: var(--ion-color-primary);
+}
+
+ion-header {
+  --background: var(--ion-color-light);
+}
+
+ion-toolbar {
+  --background: var(--ion-color-light);
+}
+
+ion-title {
+  --color: var(--ion-color-dark);
+}
+
+ion-content {
+  --background: var(--ion-color-light);
+}
+
+ion-list {
+  --background: var(--ion-color-light);
+}
+
+ion-item {
+  --background: var(--ion-color-light);
+}
+
+ion-icon {
+  --color: var(--ion-color-primary);
+}
+
+ion-label {
+  --color: var(--ion-color-dark);
+}
