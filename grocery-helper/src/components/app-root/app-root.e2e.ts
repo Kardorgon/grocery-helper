@@ -19,6 +19,6 @@ describe('app-root', () => {
     const page = await newE2EPage({ url: '/' })
 
     const url = await page.url()
-    expect(url).toContain('/tab/home')
+    expect(url).toContain('/home')
   })
 })
