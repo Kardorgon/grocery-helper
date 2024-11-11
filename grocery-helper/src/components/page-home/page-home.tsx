@@ -22,7 +22,7 @@ export class PageHome {
   render() {
     return (
       <Fragment>
-        <ion-content class="ion-padding">
+        <ion-content class="ion-padding" style={{ height: '100%' }}>
           <p>Products:</p>
           <ion-list>
             {this.products.map(product => (

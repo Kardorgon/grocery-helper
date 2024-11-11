@@ -30,7 +30,7 @@ export class ShoppingList {
   render() {
     return (
       <ion-page>
-        <ion-content class="ion-padding">
+        <ion-content class="ion-padding" style={{ height: '100%' }}>
           <ion-list>
             {this.shoppingList.map(product => (
               <ion-item key={product}>
