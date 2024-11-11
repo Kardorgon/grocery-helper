@@ -3,7 +3,7 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'app-tabs',
   styleUrl: 'app-tabs.css',
-  // shadow: true,
+  shadow: true,
 })
 export class AppTabs {
 
@@ -12,6 +12,7 @@ export class AppTabs {
   }
 
   render() {
+    console.log('AppTabs render method is called');
     return (
       <ion-tabs>
         <ion-tab tab="tab-home" component="page-home">

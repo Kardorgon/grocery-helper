@@ -3,7 +3,7 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'app-root',
   styleUrl: 'app-root.css',
-  // shadow: true,
+  shadow: true,
 })
 export class AppRoot {
 
@@ -17,6 +17,7 @@ export class AppRoot {
   }
 
   render() {
+    console.log('AppRoot render method is called');
     return (
       <ion-app>
         <ion-router useHash={false}>
