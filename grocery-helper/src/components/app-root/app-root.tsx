@@ -23,7 +23,7 @@ export class AppRoot {
         <ion-router useHash={false}>
           <ion-route-redirect from="/" to="/tab/home"></ion-route-redirect>
           <ion-route url="/tab" component="app-tabs">
-            <ion-route url="/home" component="tab-home">
+            <ion-route url="/home" component="page-home">
               <ion-route component="page-home"></ion-route>
             </ion-route>
             <ion-route url="/notice" component="tab-notice">

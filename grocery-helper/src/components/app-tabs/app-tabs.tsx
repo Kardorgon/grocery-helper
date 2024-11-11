@@ -20,13 +20,13 @@ export class AppTabs {
   render() {
     return (
       <ion-tabs>
-        <ion-tab tab="tab-home">
+        <ion-tab tab="tab-home" component="page-home">
           <ion-nav></ion-nav>
         </ion-tab>
-        <ion-tab tab="tab-notice">
+        <ion-tab tab="tab-notice" component="page-notice">
           <ion-nav></ion-nav>
         </ion-tab>
-        <ion-tab tab="tab-shopping-list">
+        <ion-tab tab="tab-shopping-list" component="shopping-list">
           <ion-nav></ion-nav>
         </ion-tab>
         <ion-tab-bar slot="bottom">
