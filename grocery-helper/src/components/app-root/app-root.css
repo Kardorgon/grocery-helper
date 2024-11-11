@@ -20,6 +20,7 @@ ion-title {
 
 ion-content {
   --background: var(--ion-color-light);
+  height: 100%; /* Pa8b4 */
 }
 
 ion-list {
