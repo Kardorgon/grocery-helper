@@ -7,20 +7,14 @@ import { Component, h } from '@stencil/core';
 })
 export class AppRoot {
 
-  componentDidLoad() {
-    console.log('AppRoot component has been loaded');
-    const router = document.querySelector('ion-router');
-    if (router) {
-      console.log('Router is initialized');
-    } else {
-      console.error('Router is not initialized');
-    }
+  componentWillLoad() {
+    console.log('AppRoot component is about to load');
   }
 
   render() {
     return (
       <ion-app>
-        <ion-router useHash={false}>
+        <ion-router useHash={true}>
           <ion-route-redirect from="/" to="/tab/home"></ion-route-redirect>
           <ion-route url="/tab" component="app-tabs">
             <ion-route url="/home" component="page-home">

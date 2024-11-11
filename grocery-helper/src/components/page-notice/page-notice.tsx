@@ -16,13 +16,8 @@ export class PageNotice {
     'Frank',
   ]
 
-  componentDidLoad() {
-    console.log('PageNotice component has been loaded');
-    if (this.names && this.names.length > 0) {
-      console.log('Names are initialized');
-    } else {
-      console.error('Names are not initialized');
-    }
+  componentWillLoad() {
+    console.log('PageNotice component is about to load');
   }
 
   render() {
