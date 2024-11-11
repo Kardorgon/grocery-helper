@@ -21,4 +21,30 @@ describe('app-root', () => {
     const url = await page.url()
     expect(url).toContain('/home')
   })
+
+  it('navigates to notice page and refreshes', async () => {
+    const page = await newE2EPage({ url: '/home' })
+
+    await page.click('ion-button[href="/notice"]')
+    await page.waitForChanges()
+
+    const url = await page.url()
+    expect(url).toContain('/notice')
+
+    const element = await page.find('page-notice')
+    expect(element).not.toBeNull()
+  })
+
+  it('navigates to profile page and refreshes', async () => {
+    const page = await newE2EPage({ url: '/notice' })
+
+    await page.click('ion-item[href="/profile/alice"]')
+    await page.waitForChanges()
+
+    const url = await page.url()
+    expect(url).toContain('/profile/alice')
+
+    const element = await page.find('page-profile')
+    expect(element).not.toBeNull()
+  })
 })
