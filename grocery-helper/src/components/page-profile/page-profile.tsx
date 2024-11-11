@@ -20,7 +20,7 @@ export class PageProfile {
   render() {
     return (
       <Fragment>
-        <ion-content fullscreen class="ion-padding">
+        <ion-content fullscreen class="ion-padding" style={{ height: '100%' }}>
           <ion-card>
             <ion-card-header>
               <h1>
