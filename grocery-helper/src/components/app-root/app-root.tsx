@@ -54,7 +54,7 @@ export class AppRoot {
               <ion-title>Grocery Helper</ion-title>
             </ion-toolbar>
           </ion-header>
-          <ion-content style={{ height: '100%' }}>
+          <ion-content style={{ flexGrow: 1 }}>
             <ion-router-outlet></ion-router-outlet>
           </ion-content>
         </div>

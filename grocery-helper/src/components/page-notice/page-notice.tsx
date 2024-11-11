@@ -23,7 +23,7 @@ export class PageNotice {
   render() {
     return (
       <Fragment>
-        <ion-content class="ion-padding" style={{ height: '100%' }}>
+        <ion-content class="ion-padding" style={{ flexGrow: 1 }}>
           <ion-list>
             {this.names.map(name=>
               <ion-item href={"/profile/"+name.toLowerCase()} key={name}>
