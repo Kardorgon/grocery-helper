@@ -25,7 +25,7 @@ export class AppTabs {
           </ion-tab-button>
           <ion-tab-button tab="tab-shopping-list">
             <ion-icon name="cart"></ion-icon>
-            <ion-label>Shopping List</ion-label>
+            <ion-label>Shopping List</ion-icon>
           </ion-tab-button>
         </ion-tab-bar>
       </ion-tabs>
