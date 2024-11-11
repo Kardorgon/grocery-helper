@@ -47,26 +47,4 @@ describe('app-root', () => {
     const element = await page.find('page-profile')
     expect(element).not.toBeNull()
   })
-
-  it('displays the menu when burger menu icon is clicked', async () => {
-    const page = await newE2EPage({ url: '/' })
-
-    const menuButton = await page.find('ion-menu-button')
-    await menuButton.click()
-    await page.waitForChanges()
-
-    const menu = await page.find('ion-menu')
-    expect(menu).toHaveClass('show-menu')
-  })
-
-  it('keeps the burger menu icon visible after clicking', async () => {
-    const page = await newE2EPage({ url: '/' })
-
-    const menuButton = await page.find('ion-menu-button')
-    await menuButton.click()
-    await page.waitForChanges()
-
-    const menuButtonAfterClick = await page.find('ion-menu-button')
-    expect(menuButtonAfterClick).not.toBeNull()
-  })
 })

@@ -1,11 +1,3 @@
-ion-menu {
-  --width: 250px;
-}
-
-ion-menu-button {
-  --color: var(--ion-color-primary);
-}
-
 ion-header {
   --background: var(--ion-color-light);
 }
