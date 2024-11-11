@@ -66,3 +66,8 @@ ion-item {
 ion-button {
   margin-left: auto;
 }
+
+/* Ensure parent elements of ion-content take up full height of viewport */
+html, body, ion-app, ion-router-outlet, #main-content {
+  height: 100%;
+}
