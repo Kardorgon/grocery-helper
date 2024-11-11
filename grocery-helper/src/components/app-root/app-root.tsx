@@ -6,7 +6,7 @@ import { Component, h, State } from '@stencil/core';
   // shadow: true,
 })
 export class AppRoot {
-  @State() menuOpen: boolean = false;
+  @State() menuOpen: boolean = true;
 
   componentWillLoad() {
     console.log('AppRoot component is about to load');
