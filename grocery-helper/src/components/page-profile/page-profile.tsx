@@ -13,6 +13,15 @@ export class PageProfile {
     return name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase();
   }
 
+  componentDidLoad() {
+    console.log('PageProfile component has been loaded');
+    if (this.name) {
+      console.log('Name is initialized');
+    } else {
+      console.error('Name is not initialized');
+    }
+  }
+
   render() {
     return (
       <Fragment>
