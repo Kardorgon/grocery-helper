@@ -10,14 +10,21 @@ export class ShoppingList {
 
   componentWillLoad() {
     console.log('ShoppingList component is about to load');
+    this.loadShoppingList();
+  }
+
+  loadShoppingList() {
+    this.shoppingList = JSON.parse(localStorage.getItem('shoppingList') || '[]');
   }
 
   addToShoppingList(product: string) {
     this.shoppingList = [...this.shoppingList, product];
+    localStorage.setItem('shoppingList', JSON.stringify(this.shoppingList));
   }
 
   removeFromShoppingList(product: string) {
     this.shoppingList = this.shoppingList.filter(item => item !== product);
+    localStorage.setItem('shoppingList', JSON.stringify(this.shoppingList));
   }
 
   render() {

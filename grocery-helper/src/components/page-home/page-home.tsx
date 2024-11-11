@@ -14,6 +14,9 @@ export class PageHome {
 
   addToShoppingList(product: string) {
     // Add product to shopping list
+    const shoppingList = JSON.parse(localStorage.getItem('shoppingList') || '[]');
+    shoppingList.push(product);
+    localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
   }
 
   render() {
