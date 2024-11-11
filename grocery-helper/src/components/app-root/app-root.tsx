@@ -1,4 +1,4 @@
-import { Component, h, State } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'app-root',
@@ -6,14 +6,14 @@ import { Component, h, State } from '@stencil/core';
   // shadow: true,
 })
 export class AppRoot {
-  @State() menuOpen: boolean = true;
 
   componentWillLoad() {
     console.log('AppRoot component is about to load');
   }
 
   toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+    const menu = document.querySelector('ion-menu');
+    menu.open();
   }
 
   render() {
@@ -26,7 +26,7 @@ export class AppRoot {
           <ion-route url="/profile/:name" component="page-profile"></ion-route>
           <ion-route url="/shopping-list" component="shopping-list"></ion-route>
         </ion-router>
-        <ion-menu side="start" menuId="first" contentId="main-content" swipeGesture={true} disabled={!this.menuOpen}>
+        <ion-menu side="start" menuId="first" contentId="main-content" swipeGesture={true}>
           <ion-header>
             <ion-toolbar>
               <ion-title>Menu</ion-title>
@@ -40,7 +40,7 @@ export class AppRoot {
               </ion-item>
               <ion-item button href="/shopping-list">
                 <ion-icon slot="start" name="cart"></ion-icon>
-                <ion-label>Shopping List</ion-label>
+                <ion-label>Shopping List</ion-item>
               </ion-item>
             </ion-list>
           </ion-content>
