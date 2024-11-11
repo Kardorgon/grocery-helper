@@ -14,4 +14,11 @@ describe('app-root', () => {
     const element = await page.find('app-root ion-title')
     expect(element.textContent).toEqual('Home')
   })
+
+  it('navigates to home page on startup', async () => {
+    const page = await newE2EPage({ url: '/' })
+
+    const url = await page.url()
+    expect(url).toContain('/tab/home')
+  })
 })
