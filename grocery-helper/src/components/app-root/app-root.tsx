@@ -14,11 +14,6 @@ export class AppRoot {
   render() {
     return (
       <ion-app>
-        <ion-header>
-          <ion-toolbar>
-            <ion-title>Grocery Helper</ion-title>
-          </ion-toolbar>
-        </ion-header>
         <ion-router useHash={false}>
           <ion-route-redirect from="/" to="/home"></ion-route-redirect>
           <ion-route url="/home" component="page-home"></ion-route>
@@ -26,7 +21,9 @@ export class AppRoot {
           <ion-route url="/profile/:name" component="page-profile"></ion-route>
           <ion-route url="/shopping-list" component="shopping-list"></ion-route>
         </ion-router>
-        <ion-router-outlet></ion-router-outlet>
+        <ion-router-outlet>
+          <app-tabs></app-tabs>
+        </ion-router-outlet>
       </ion-app>
     )
   }
