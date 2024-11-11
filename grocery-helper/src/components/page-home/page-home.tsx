@@ -47,6 +47,7 @@ export class PageHome {
           </ion-toolbar>
         </ion-header>
         <ion-content class="ion-padding">
+          <p>Hello</p>
           <p>Welcome to Stencil App Starter.</p>
           <ion-list>
             <ion-radio-group
